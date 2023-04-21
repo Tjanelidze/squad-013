@@ -3,3 +3,18 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "DM Sans";
+  font-style: normal;
+}
+:root {
+  /* for font size */
+  --max-font-weight: 700;
+  --min-font-weight: 400;
+}

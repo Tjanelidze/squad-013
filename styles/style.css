@@ -214,7 +214,7 @@ a {
 .stories-txt-box > p {
   font-weight: var(--min-font-weight);
   font-size: 15px;
-  line-height: 25px;
+  line-height: 24px;
   color: #000000;
   margin-top: 1.6rem;
   mix-blend-mode: normal;

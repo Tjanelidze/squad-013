@@ -689,7 +689,7 @@ footer {
 
   .copyright {
     font-size: unset;
-    margin-top: 11rem;
+    margin-top: 14rem;
   }
 }
 
@@ -971,6 +971,9 @@ footer {
     cursor: pointer;
     mix-blend-mode: normal;
     opacity: 0.3;
+  }
+  .copyright {
+    margin-top: 7rem;
   }
   .footerinvite:hover {
     text-decoration: underline;

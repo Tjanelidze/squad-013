@@ -1,0 +1,982 @@
+/* ******************************************************** */
+/* whole header section with its navbar  */
+/* ******************************************************** */
+header {
+  height: 7rem;
+  padding: 0 2.4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar {
+  display: none;
+}
+
+.invite-btn0 {
+  display: none;
+}
+
+#hamburger-icon {
+  margin: auto 0;
+  cursor: pointer;
+}
+
+#hamburger-icon div {
+  width: 2rem;
+  height: 1px;
+  background-color: black;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+.open .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+  transform: rotate(-45deg) translate(-4px, 6px);
+}
+
+.open .bar2 {
+  -webkit-transform: rotate(45deg) translate(-6px, -8px);
+  transform: rotate(45deg) translate(0px, -1px);
+}
+
+.open .mobile-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.mobile-menu {
+  background: #ffffff;
+  margin-top: 2rem;
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  height: calc(50vh - 50px);
+  width: 100%;
+}
+
+li {
+  list-style: none;
+  text-decoration: none;
+  margin-bottom: 2rem;
+}
+
+a {
+  font-weight: var(--max-font-weight);
+  text-decoration: none;
+  font-size: 15px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.mobile-menu > li > a:hover {
+  mix-blend-mode: normal;
+  opacity: 0.3;
+}
+.nav-line {
+  background: #000000;
+  mix-blend-mode: normal;
+  opacity: 0.25;
+  height: 1px;
+  margin-bottom: 2rem;
+  width: 85%;
+}
+
+.nav-list > li > a:hover {
+  mix-blend-mode: normal;
+  opacity: 0.3;
+}
+.invite-btn {
+  background: #000000;
+  font-weight: var(--max-font-weight);
+  font-size: 15px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 2.5px;
+  color: #ffffff;
+  padding: 1em 4.5em;
+  border: none;
+}
+.invite-btn0:hover {
+  background: #dfdfdf;
+  color: #000000;
+  cursor: pointer;
+}
+/* ******************************************************** */
+/* navbar and header section ends here  */
+/* ******************************************************** */
+/* ******************************************************** */
+/* Create and share section css */
+/* ******************************************************** */
+.createandshare {
+  background-image: url(../assets/home/mobile/create-and-share.jpg);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 29rem;
+  background-size: cover;
+}
+
+.createandsharetxt {
+  position: relative;
+  background-color: #000000;
+  width: 100%;
+  height: 42rem;
+}
+.createandsharetxt::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50%;
+  top: 0;
+  left: 5%;
+  height: 0.5rem;
+  background: linear-gradient(
+    26.57deg,
+    #ffc593 0%,
+    #bc7198 43.29%,
+    #5a77ff 83.33%
+  );
+}
+
+.create-text-box {
+  padding: 5.1em 2.4em;
+}
+.create-text-box > h1 {
+  font-weight: var(--max-font-weight);
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: 3.33333px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.create-text-box > p {
+  font-weight: var(--min-font-weight);
+  font-size: 15px;
+  line-height: 25px;
+  color: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.6;
+  margin-top: 1.6rem;
+}
+
+.getinvitation {
+  display: flex;
+  flex-direction: row;
+  margin-top: 2.3rem;
+}
+
+.invite-link {
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 2px;
+  color: #ffffff;
+  display: inline-flex;
+}
+
+.invite-link::after {
+  content: url(../assets/shared/desktop/arrow\ white.svg);
+  margin-left: 1.8rem;
+}
+.invite-link:hover {
+  text-decoration-line: underline;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+/* ******************************************************** */
+/* beautiful stories section */
+/* ******************************************************** */
+.stories-photo {
+  background-image: url(../assets/home/mobile/beautiful-stories.jpg);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 27rem;
+  background-size: cover;
+}
+.stories-txt-box {
+  padding: 5.9em 2.4em;
+}
+.stories-txt-box > h1 {
+  font-weight: var(--max-font-weight);
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: 3.33333px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.stories-txt-box > p {
+  font-weight: var(--min-font-weight);
+  font-size: 15px;
+  line-height: 25px;
+  color: #000000;
+  margin-top: 1.6rem;
+  mix-blend-mode: normal;
+  opacity: 0.6;
+}
+
+.viewstory {
+  display: flex;
+  flex-direction: row;
+  margin-top: 2.3rem;
+}
+
+.invite-story {
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 2px;
+  color: #000000;
+  display: inline-flex;
+}
+.invite-story::after {
+  content: url(../assets/shared/desktop/arrow\ black.svg);
+  margin-left: 1.8rem;
+}
+
+/* ******************************************************** */
+/* Design for everyone */
+/* ******************************************************** */
+.design-photo {
+  background-image: url(../assets/home/mobile/designed-for-everyone.jpg);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 27rem;
+  background-size: cover;
+}
+.design-txt-box {
+  padding: 5.9em 2.4em;
+}
+.design-txt-box > h1 {
+  font-weight: var(--max-font-weight);
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: 3.33333px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.design-txt-box > p {
+  font-weight: var(--min-font-weight);
+  font-size: 15px;
+  line-height: 25px;
+  color: #000000;
+  margin-top: 1.6rem;
+  mix-blend-mode: normal;
+  opacity: 0.6;
+}
+
+/* ******************************************************** */
+/* photo exibition*/
+/* mountain section */
+/* ******************************************************** */
+
+.mountain {
+  background-image: url(../assets/stories/mobile/mountains.jpg);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 37rem;
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 3.5rem 0;
+}
+.mountainsec::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background-image: linear-gradient(
+    27deg,
+    #ffc593 0%,
+    #bc7198 49%,
+    #5a77ff 95%
+  );
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.txtbox {
+  width: 80%;
+}
+.author {
+  margin-bottom: 1.6rem;
+}
+.author > h1 {
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: var(--max-font-weight);
+  color: #ffffff;
+}
+.author > p {
+  font-size: 13px;
+  line-height: 17px;
+  font-weight: var(--min-font-weight);
+  color: #ffffff;
+}
+.story-line {
+  background: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.25;
+  margin-bottom: 2rem;
+}
+.read-story {
+  display: flex;
+  justify-content: space-between;
+}
+.readtxt {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: var(--min-font-weight);
+  letter-spacing: 2px;
+  color: #ffffff;
+}
+
+/* ******************************************************** */
+/* photo exibition*/
+/* city section */
+/* ******************************************************** */
+.city {
+  background-image: url(../assets/stories/mobile/cityscapes.jpg);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 37rem;
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 3.5rem 0;
+}
+
+.citysec::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background-image: linear-gradient(
+    27deg,
+    #ffc593 0%,
+    #bc7198 49%,
+    #5a77ff 95%
+  );
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+/* ******************************************************** */
+/* photo exibition*/
+/* voyage section */
+/* ******************************************************** */
+.voyage {
+  background-image: url(../assets/stories/mobile/18-days-voyage.jpg);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 35rem;
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 3.5rem 0;
+}
+
+.voyagesec::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background-image: linear-gradient(
+    27deg,
+    #ffc593 0%,
+    #bc7198 49%,
+    #5a77ff 95%
+  );
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+/* ******************************************************** */
+/* photo exibition*/
+/* architecte section */
+/* ******************************************************** */
+.architect {
+  background-image: url(../assets/stories/mobile/architecturals.jpg);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 35rem;
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 3.5rem 0;
+}
+.architectsec::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background-image: linear-gradient(
+    27deg,
+    #ffc593 0%,
+    #bc7198 49%,
+    #5a77ff 95%
+  );
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+/* ******************************************************** */
+/* features section */
+/* ******************************************************** */
+.features {
+  padding: 8rem 3.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  gap: 5.6rem;
+}
+.features-heading {
+  font-weight: var(--max-font-weight);
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  color: #000000;
+  margin-top: 6.6rem;
+}
+.features-para {
+  font-weight: var(--min-font-weight);
+  font-size: 15px;
+  line-height: 25px;
+  text-align: center;
+  color: #000000;
+  mix-blend-mode: normal;
+  margin-top: 1.6rem;
+  opacity: 0.6;
+  margin-bottom: 1.6rem;
+}
+
+/* ******************************************************** */
+/* footer */
+/* ******************************************************** */
+footer {
+  padding: 5.6rem 6rem;
+  background-color: #000000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footernav-list0 {
+  display: none;
+}
+
+.icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1.3rem;
+  margin-top: 3.2rem;
+  margin-bottom: 5rem;
+}
+.icons > svg {
+  fill: #ffffff;
+  cursor: pointer;
+}
+
+.fb:hover {
+  fill: url(#grad);
+}
+
+.youtube:hover {
+  fill: url(#youtube);
+}
+
+.twitter:hover {
+  fill: url(#twitter);
+}
+.pinterest:hover {
+  fill: url(#pinterest);
+}
+.insta:hover {
+  fill: url(#insta);
+}
+
+.footerlastdiv {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.footernav-list > li > a {
+  margin-top: 5rem;
+  list-style: none;
+  text-decoration: none;
+  margin-bottom: 2rem;
+  font-weight: var(--max-font-weight);
+  text-decoration: none;
+  font-size: 15px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.footerinvite {
+  font-weight: var(--max-font-weight);
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 2px;
+  margin-bottom: 3.4rem;
+  color: #ffffff;
+  margin-top: 11rem;
+}
+.footerinvite::after {
+  content: url(../assets/shared/desktop/arrow\ white.svg);
+  margin-left: 1.8rem;
+}
+.copyright {
+  font-weight: var(--min-font-weight);
+  font-size: 15px;
+  line-height: 20px;
+  text-align: center;
+  color: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+  margin-top: 3.4rem;
+}
+
+/* ******************************************************** */
+/* min-tablet version starts from here 560px*/
+/* ******************************************************** */
+@media screen and (min-width: 560px) {
+  /* ******************************************************** */
+  /* header section */
+  /* ******************************************************** */
+  #hamburger-icon {
+    display: none;
+    visibility: hidden;
+  }
+
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    margin-top: 2rem;
+  }
+
+  .nav-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 1.7rem;
+  }
+
+  .nav-line {
+    display: none;
+  }
+
+  header {
+    padding: 2.8rem 1rem;
+  }
+  .invite-btn0 {
+    display: inline-block;
+    background: #000000;
+    font-weight: var(--max-font-weight);
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+    color: #ffffff;
+    padding: 0.5em 2.4em;
+    border: none;
+  }
+
+  .nav-list > li > a {
+    text-decoration: none;
+    font-size: 10px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #000000;
+  }
+  /* ******************************************************** */
+  /* main section  */
+  /* create and share */
+  /* ******************************************************** */
+  .createsec {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .createandshare {
+    background-position: center;
+    height: 42rem;
+  }
+  .createandsharetxt::before {
+    width: 0.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    height: 50%;
+  }
+  /*  beautiful stories section  */
+  .beautifulsec {
+    display: flex;
+    flex-direction: row;
+  }
+  .stories-photo {
+    height: 42rem;
+  }
+  /* Design for everyone */
+
+  .designsec {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .design-photo {
+    background-position: center;
+    height: 42rem;
+  }
+
+  /* Photo exibition  */
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* footer */
+
+  footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 2rem;
+    padding: 2.8rem 2rem;
+  }
+  .footernav-list {
+    display: none;
+  }
+  .footernav-list0 {
+    display: flex;
+    gap: 1rem;
+    flex-direction: row;
+    margin-top: 3.2rem;
+  }
+  .footernav-list0 > li > a {
+    list-style: none;
+    text-decoration: none;
+    margin-bottom: 2rem;
+    font-weight: var(--max-font-weight);
+    text-decoration: none;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+  .icons {
+    margin-top: 10rem;
+    justify-content: unset;
+  }
+
+  .copyright {
+    font-size: unset;
+    margin-top: 14rem;
+  }
+}
+
+/* ******************************************************** */
+/* tablet version starts from here 768px */
+/* ******************************************************** */
+@media screen and (min-width: 768px) {
+  header {
+    padding: 1.9rem 4rem;
+  }
+  .nav-list > li > a {
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 2px;
+  }
+
+  .invite-btn0 {
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 2px;
+    padding: 1.2em 2.4em;
+    border: none;
+  }
+  /* main section **********************************/
+  /* creat and share */
+
+  .createandsharetxt {
+    height: 65rem;
+  }
+
+  .createandshare {
+    background-image: url(../assets/home/tablet/create-and-share.jpg);
+    background-repeat: no-repeat;
+    height: 65rem;
+  }
+
+  .create-text-box {
+    padding: 17.3em 5.4em;
+  }
+  .create-text-box > h1 {
+    font-weight: var(--max-font-weight);
+    font-size: 3.2rem;
+    line-height: 4rem;
+    letter-spacing: 3.33333px;
+    text-transform: uppercase;
+  }
+
+  .create-text-box > p {
+    font-weight: var(--min-font-weight);
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    opacity: 0.6;
+    margin-top: 2.6rem;
+  }
+  .getinvitation {
+    margin-top: 4.8rem;
+  }
+  .invite-link {
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 2px;
+  }
+  /* beautiful stories section */
+
+  .stories-photo {
+    background-image: url(../assets/home/tablet/beautiful-stories.jpg);
+    background-repeat: no-repeat;
+    height: 60rem;
+  }
+  .stories-txt-box {
+    padding: 15.1em 7.4em;
+  }
+  .stories-txt-box > h1 {
+    font-size: 4rem;
+    line-height: 4.8rem;
+  }
+  .stories-txt-box > p {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+  }
+  /* Design for everyone */
+
+  .design-photo {
+    background-image: url(../assets/home/tablet/designed-for-everyone.jpg);
+    background-repeat: no-repeat;
+    height: 60rem;
+  }
+
+  .designtxt {
+    padding: 11.1em 2.4em;
+  }
+  .design-txt-box > h1 {
+    font-size: 4rem;
+    line-height: 4.8rem;
+  }
+  /* ********************************************** */
+  /* gallery section */
+  /* ********************************************** */
+  /* mountain */
+  .mountain {
+    background-image: url(../assets/stories/desktop/mountains.jpg);
+    background-repeat: no-repeat;
+    height: 53rem;
+  }
+
+  /* city */
+  .city {
+    background-image: url(../assets/stories/desktop/cityscapes.jpg);
+    background-repeat: no-repeat;
+    height: 53rem;
+  }
+  /* voyage */
+  .voyage {
+    background-image: url(../assets/stories/desktop/18-days-voyage.jpg);
+    background-repeat: no-repeat;
+    height: 53rem;
+  }
+  /* architect */
+  .architect {
+    background-image: url(../assets/stories/desktop/architecturals.jpg);
+    background-repeat: no-repeat;
+    height: 53rem;
+  }
+  /* features */
+  .features {
+    padding: 12rem 15rem;
+    max-width: 100%;
+  }
+  /* footer */
+  footer {
+    padding: 1.9rem 4rem;
+  }
+  .footerinvite {
+    margin-top: 6.4rem;
+  }
+  .footernav-list0 > li > a {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .copyright {
+    font-size: 15px;
+    line-height: 20px;
+    margin-top: 13rem;
+  }
+}
+
+/* ******************************************************* */
+/* DEsktop version */
+/* ******************************************************* */
+@media screen and (min-width: 1024px) {
+  /* header */
+  header {
+    padding: 1.6em 16.4em;
+  }
+  /* create and share */
+  .createandshare {
+    background-image: url(../assets/home/desktop/create-and-share.jpg);
+    background-repeat: no-repeat;
+    /* height: 83rem; */
+  }
+  .createandsharetxt {
+    width: 91rem;
+  }
+  .create-text-box {
+    padding: 17.3em 11.1em;
+  }
+
+  /* beautiful stories section */
+  .stories-photo {
+    background-image: url(../assets/home/desktop/beautiful-stories.jpg);
+    background-repeat: no-repeat;
+  }
+  .storiestxt {
+    width: 91rem;
+  }
+  .stories-txt-box {
+    padding: 13.6em 13.1em;
+  }
+  /*  Design for everyone*/
+  .design-photo {
+    background-image: url(../assets/home/desktop/designed-for-everyone.jpg);
+    background-repeat: no-repeat;
+    height: 68rem;
+  }
+  .designtxt {
+    width: 71rem;
+  }
+  .design-txt-box {
+    padding: 4.6rem;
+  }
+  .invite-story:hover {
+    color: #000000;
+    text-decoration: underline;
+  }
+  /* photo exibition */
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .mountain,
+  .city,
+  .voyage,
+  .architect {
+    height: 70rem;
+  }
+
+  /* hovers */
+  .mountainsec {
+    transition: all 0.3s;
+  }
+  .mountainsec:hover {
+    transform: translateY(-25px);
+    cursor: pointer;
+    opacity: 1;
+    filter: brightness(65%);
+  }
+
+  .citysec {
+    transition: all 0.3s;
+  }
+  .citysec:hover {
+    transform: translateY(-25px);
+    cursor: pointer;
+    opacity: 1;
+    filter: brightness(66%);
+  }
+
+  .voyagesec {
+    transition: all 0.3s;
+  }
+  .voyagesec:hover {
+    transform: translateY(-25px);
+    cursor: pointer;
+    opacity: 1;
+    filter: brightness(65%);
+  }
+  .architectsec {
+    transition: all 0.3s;
+  }
+
+  .architectsec:hover {
+    transform: translateY(-25px);
+    cursor: pointer;
+    opacity: 1;
+    filter: brightness(65%);
+  }
+  .mountainsec:hover::after {
+    opacity: 1;
+  }
+  .citysec:hover::after {
+    opacity: 1;
+  }
+  .voyagesec:hover::after {
+    opacity: 1;
+  }
+  .architectsec:hover::after {
+    opacity: 1;
+  }
+
+  /* features */
+  .features {
+    padding: 12rem 16.5rem;
+    display: grid;
+    align-items: baseline;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  /* footer */
+  footer {
+    padding: 1.6em 16.4em 6.4em;
+  }
+  .footernav-list0 {
+    display: none;
+  }
+  .footernav-list {
+    display: flex;
+    flex-direction: column;
+  }
+  .footernav-list > li > a:hover {
+    cursor: pointer;
+    mix-blend-mode: normal;
+    opacity: 0.3;
+  }
+  .copyright {
+    margin-top: 7rem;
+  }
+  .footerinvite:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}

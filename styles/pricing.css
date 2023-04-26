@@ -1,0 +1,663 @@
+/* ******************************************************** */
+/* whole header section with its navbar  */
+/* ******************************************************** */
+header {
+  height: 7rem;
+  padding: 0 2.4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar {
+  display: none;
+}
+
+.invite-btn0 {
+  display: none;
+}
+
+#hamburger-icon {
+  margin: auto 0;
+  cursor: pointer;
+}
+
+#hamburger-icon div {
+  width: 2rem;
+  height: 1px;
+  background-color: black;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+.open .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+  transform: rotate(-45deg) translate(-4px, 6px);
+}
+
+.open .bar2 {
+  -webkit-transform: rotate(45deg) translate(-6px, -8px);
+  transform: rotate(45deg) translate(0px, -1px);
+}
+
+.open .mobile-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.mobile-menu {
+  background: #ffffff;
+  margin-top: 2rem;
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  height: calc(50vh - 50px);
+  width: 100%;
+}
+
+li {
+  list-style: none;
+  text-decoration: none;
+  margin-bottom: 2rem;
+}
+
+a {
+  font-weight: var(--max-font-weight);
+  text-decoration: none;
+  font-size: 15px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.mobile-menu > li > a:hover {
+  mix-blend-mode: normal;
+  opacity: 0.3;
+}
+.nav-line {
+  background: #000000;
+  mix-blend-mode: normal;
+  opacity: 0.25;
+  height: 1px;
+  margin-bottom: 2rem;
+  width: 85%;
+}
+
+.nav-list > li > a:hover {
+  mix-blend-mode: normal;
+  opacity: 0.3;
+}
+
+/* ************************************************************ */
+/* navbar and header section ends here  */
+/* ******************************************************** */
+
+/* ******************************************************** */
+/* pricing section css */
+/* ******************************************************** */
+.container {
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 0 25px;
+}
+.pricing {
+  background-image: url(../assets/pricing/mobile/hero.jpg);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 29rem;
+  background-size: cover;
+}
+
+.pricingtxt {
+  position: relative;
+  background-color: #000000;
+  width: 100%;
+}
+.pricingtxt::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50%;
+  top: 0;
+  left: 5%;
+  height: 0.5rem;
+  background: linear-gradient(
+    26.57deg,
+    #ffc593 0%,
+    #bc7198 43.29%,
+    #5a77ff 83.33%
+  );
+}
+
+.pricing-text-box {
+  padding: 4.1em 2.4em;
+}
+.pricing-text-box > h1 {
+  font-weight: var(--max-font-weight);
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: 3.33333px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.pricing-text-box > p {
+  font-weight: var(--min-font-weight);
+  font-size: 15px;
+  line-height: 25px;
+  color: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.6;
+  margin-top: 1.6rem;
+}
+
+/* ********************************************* */
+/* toggle- switch */
+/* ********************************************* */
+.pricing-tab {
+  padding: 6.4rem 0 6rem;
+}
+
+.label {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.label-text {
+  margin-left: 8px;
+}
+
+.toggle {
+  isolation: isolate;
+  position: relative;
+  height: 24px;
+  width: 48px;
+  border-radius: 15px;
+  background: #d6d6d6;
+  overflow: hidden;
+}
+
+.toggle-inner {
+  z-index: 2;
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  height: 22px;
+  width: 46px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.active-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 200%;
+  background: #dfdfdf;
+  transform: translate3d(-100%, 0, 0);
+  transition: transform 0.05s linear 0.17s;
+}
+
+.toggle-state {
+  display: none;
+}
+
+.indicator {
+  height: 100%;
+  width: 200%;
+  background: #000000;
+  border-radius: 13px;
+  transform: translate3d(-75%, 0, 0);
+  transition: transform 0.35s cubic-bezier(0.85, 0.05, 0.18, 1.35);
+}
+
+.toggle-state:checked ~ .active-bg {
+  transform: translate3d(-50%, 0, 0);
+}
+
+.toggle-state:checked ~ .toggle-inner .indicator {
+  transform: translate3d(25%, 0, 0);
+}
+
+.toggle-switch > span {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.toggle-switch {
+  margin-bottom: 40px;
+  color: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3.2rem;
+}
+
+/* ********************************************* */
+/* toggle- switch ends here*/
+/* ********************************************* */
+/* ********************************************* */
+/* basic box */
+/* ********************************************* */
+.price-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 3rem;
+  margin: 0 auto;
+}
+
+.basic-box {
+  background: #f5f5f5;
+  padding: 4rem;
+  text-align: center;
+}
+
+.basic {
+  font-weight: var(--max-font-weight);
+  font-size: 24px;
+  line-height: 25px;
+  text-align: center;
+  color: #000000;
+}
+
+.basicinfo {
+  font-weight: var(--min-font-weight);
+  font-size: 15px;
+  line-height: 25px;
+  text-align: center;
+  color: #000000;
+  mix-blend-mode: normal;
+  opacity: 0.6;
+  margin-top: 1.8rem;
+  margin-bottom: 4rem;
+}
+
+.priceamount {
+  font-weight: var(--max-font-weight);
+  font-size: 40px;
+  line-height: 48px;
+  text-align: center;
+  letter-spacing: 4.16667px;
+  text-transform: uppercase;
+  color: #000000;
+}
+.permonth {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  text-align: center;
+  color: #000000;
+  mix-blend-mode: normal;
+  opacity: 0.6;
+  margin-bottom: 4rem;
+}
+/* ********************************************* */
+/* pro box */
+/* ********************************************* */
+
+.pro-box {
+  background: #000000;
+  padding: 4rem;
+  text-align: center;
+  position: relative;
+}
+
+.Pro {
+  font-weight: var(--max-font-weight);
+  font-size: 24px;
+  line-height: 25px;
+  text-align: center;
+  color: #ffff;
+}
+
+.pro-box::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 0.5rem;
+  background: linear-gradient(
+    26.57deg,
+    #ffc593 0%,
+    #bc7198 43.29%,
+    #5a77ff 83.33%
+  );
+}
+
+.proinfo {
+  font-weight: var(--min-font-weight);
+  font-size: 15px;
+  line-height: 25px;
+  text-align: center;
+  color: #ffff;
+  mix-blend-mode: normal;
+  opacity: 0.6;
+  margin-top: 1.8rem;
+  margin-bottom: 4rem;
+}
+
+.priceamountpro {
+  font-weight: var(--max-font-weight);
+  font-size: 40px;
+  line-height: 48px;
+  text-align: center;
+  letter-spacing: 4.16667px;
+  text-transform: uppercase;
+  color: #ffff;
+}
+.permonthpro {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  text-align: center;
+  color: #ffff;
+  mix-blend-mode: normal;
+  opacity: 0.6;
+  margin-bottom: 4rem;
+}
+/* pick plan button hover over */
+.pick-plan {
+  cursor: pointer;
+  display: inline-block;
+  transition: all 0.2s ease-in;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  padding: 0.7em 1.7em;
+  font-weight: var(--max-font-weight);
+  font-size: 15px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 2.5px;
+  color: #000000;
+  padding: 1em 4.5em;
+  border-radius: 0.5em;
+  background: #ffff;
+  border: 1px solid #e8e8e8;
+  box-shadow: 6px 6px 12px #000000, -6px -6px 12px #000000;
+}
+
+.pick-plan:active {
+  color: #fff;
+  box-shadow: inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff;
+}
+
+.pick-plan:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) scaleY(1) scaleX(1.25);
+  top: 100%;
+  width: 140%;
+  height: 180%;
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 50%;
+  display: block;
+  transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+  z-index: -1;
+}
+
+.pick-plan:after {
+  content: "";
+  position: absolute;
+  left: 55%;
+  transform: translateX(-50%) scaleY(1) scaleX(1.45);
+  top: 180%;
+  width: 160%;
+  height: 190%;
+  background-color: #000000;
+  border-radius: 50%;
+  display: block;
+  transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+  z-index: -1;
+}
+
+.pick-plan:hover {
+  color: #fff;
+  border: 1px solid #000;
+}
+
+.pick-plan:hover:before {
+  top: -35%;
+  background-color: #000;
+  transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+.pick-plan:hover:after {
+  top: -45%;
+  background-color: #000;
+  transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+/* ****************************************** */
+/* business-box */
+/* ****************************************** */
+.business-box {
+  background: #f5f5f5;
+  padding: 4rem;
+  text-align: center;
+}
+
+/* ******************************************************** */
+/* min-tablet version starts from here 560px*/
+/* ******************************************************** */
+@media screen and (min-width: 560px) {
+  /* ******************************************************** */
+  /* header section */
+  /* ******************************************************** */
+  #hamburger-icon {
+    display: none;
+    visibility: hidden;
+  }
+
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    margin-top: 2rem;
+  }
+
+  .nav-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 1.7rem;
+  }
+
+  .nav-line {
+    display: none;
+  }
+
+  header {
+    padding: 2.8rem 1rem;
+  }
+
+  /* ********************************************************** */
+  /* button decoration */
+  /* ******************************************************** */
+  .invite-btn0 {
+    display: inline-block;
+    transition: all 0.2s ease-in;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    color: #ffff;
+    padding: 0.7em 1.7em;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 700;
+    border-radius: 0.5em;
+    background: #000000;
+    border: 1px solid #e8e8e8;
+    box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+  }
+
+  .invite-btn0:active {
+    color: #666;
+    box-shadow: inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff;
+  }
+
+  .invite-btn0:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) scaleY(1) scaleX(1.25);
+    top: 100%;
+    width: 140%;
+    height: 180%;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 50%;
+    display: block;
+    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+    z-index: -1;
+  }
+
+  .invite-btn0:after {
+    content: "";
+    position: absolute;
+    left: 55%;
+    transform: translateX(-50%) scaleY(1) scaleX(1.45);
+    top: 180%;
+    width: 160%;
+    height: 190%;
+    background-color: #dfdfdf;
+    border-radius: 50%;
+    display: block;
+    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+    z-index: -1;
+  }
+
+  .invite-btn0:hover {
+    color: #000000;
+
+    border: 1px solid #dfdfdf;
+  }
+
+  .invite-btn:hover:before {
+    top: -35%;
+    background-color: #dfdfdf;
+    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+  }
+
+  .invite-btn0:hover:after {
+    top: -45%;
+    background-color: #dfdfdf;
+    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+  }
+  .nav-list > li > a {
+    text-decoration: none;
+    font-size: 10px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #000000;
+  }
+
+  /* ********************************************************** */
+  /* button decoration */
+  /* ******************************************************** */
+  /* main section */
+  .pricingsec {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .pricing {
+    background-image: url(../assets/pricing/tablet/hero.jpg);
+    background-repeat: no-repeat;
+    height: 65rem;
+  }
+  .pricing-text-box {
+    padding: 17.3em 5.4em;
+  }
+  .pricingtxt::before {
+    width: 0.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    height: 50%;
+  }
+  /* pricing grid */
+  .basic-box,
+  .pro-box,
+  .business-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .priceamount,
+  .permonth,
+  .priceamountpro,
+  .permonthpro {
+    text-align: right;
+  }
+  .pro-box::before {
+    width: 0.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    height: 100%;
+  }
+}
+
+/* ******************************************************* */
+/* DEsktop version */
+/* ******************************************************* */
+@media screen and (min-width: 1024px) {
+  /* header */
+  header {
+    padding: 1.6em 16.4em;
+  }
+  /* pricing hero */
+  .pricing {
+    background-image: url(../assets/pricing/desktop/hero.jpg);
+    background-repeat: no-repeat;
+    /* height: 83rem; */
+  }
+  .pricing-text-box {
+    padding: 22.3em 15.1em;
+  }
+  .getinvitation {
+    display: none;
+    visibility: hidden;
+  }
+  .pricing-text-box > p {
+    margin-top: 2.1rem;
+  }
+
+  /* price-grid */
+  .basic-box,
+  .pro-box,
+  .business-box {
+    display: unset;
+    padding: 50px 40px;
+    text-align: center;
+    height: 44rem;
+  }
+
+  .priceamount,
+  .permonth,
+  .priceamountpro,
+  .permonthpro {
+    text-align: center;
+  }
+  .price-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 3rem;
+    padding: 3.5rem 0 3rem;
+  }
+  .pro-box {
+    height: 50rem;
+    padding-top: 8.8rem;
+    transform: translateY(-35px);
+    position: relative;
+  }
+}

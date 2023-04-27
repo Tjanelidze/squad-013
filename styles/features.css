@@ -128,8 +128,11 @@ a {
 }
 /* main section */
 .hero {
+  background: url(/assets/features/mobile/hero.jpg) no-repeat;
   width: 100%;
-  display: block;
+  height: 29.4rem;
+  background-size: cover;
+  
 }
 .main-info {
   padding: 7.2rem 2.8rem 7.2rem 2.9rem;
@@ -186,7 +189,7 @@ p {
 
 /* invite with desert */
 .invite-today {
-  background: url(./assets/shared/mobile/bg-beta.jpg) no-repeat;
+  background: url(/assets/shared/mobile/bg-beta.jpg) no-repeat;
   background-size: cover;
   padding: 6.4rem 3.2rem 6.4rem 3.3rem;
   color: #ffffff;
@@ -410,6 +413,12 @@ header {
   padding: 1.2em 2.4em;
   border: none;
 }
+/* responsive hero section */
+.hero{
+  background: url(/assets/features/tablet/hero.jpg)no-repeat;
+  background-size: cover;
+  height: 51.5rem;
+}
 /* main section */
   .main-box {
     display: flex;
@@ -460,6 +469,8 @@ header {
     margin-bottom: 0;
   }
   .invite-today {
+    background: url(/assets/shared/tablet/bg-beta.jpg) no-repeat;
+    background-size: cover;
     display: flex;
     justify-content: space-between;
     gap: 12.3rem;
@@ -488,10 +499,14 @@ header {
 header {
   padding: 1.6em 16.4em;
 }
+
+/* hero responsive section */
+.hero{
+  background: url(/assets/features/desktop/hero.jpg)no-repeat;
+  background-size: cover;
+  width: 100%;
+}
 /* main */
-  .main-box{
-   background: url(./assets/features/desktop/hero.jpg) no-repeat;
-  }
   .main-info{
     padding: 17.3rem 11.1rem;
   }
@@ -501,6 +516,7 @@ header {
   row-gap: 10rem;
 }
   .invite-today{
+    background: url(/assets/shared/desktop/bg-beta.jpg);
     padding: 6.8rem 16.5rem;
   }
   .invite-link{

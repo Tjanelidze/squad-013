@@ -224,11 +224,16 @@ a {
 .toggle-state:checked ~ .toggle-inner .indicator {
   transform: translate3d(25%, 0, 0);
 }
-
+.changecolor {
+  color: #000000 !important;
+  opacity: 1 !important;
+}
 .toggle-switch > span {
   font-weight: 700;
   font-size: 18px;
   line-height: 25px;
+  color: #000000;
+  opacity: 0.5;
 }
 
 .toggle-switch {
@@ -245,11 +250,7 @@ a {
 .visible {
   background: #ffff;
 }
-.changecolor {
-  color: #000000;
-  mix-blend-mode: normal;
-  opacity: 0.5;
-}
+
 /* ********************************************* */
 /* toggle- switch ends here*/
 /* ********************************************* */

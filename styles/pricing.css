@@ -239,7 +239,17 @@ a {
   justify-content: center;
   gap: 3.2rem;
 }
-
+.active {
+  background-color: #000000;
+}
+.visible {
+  background: #ffff;
+}
+.changecolor {
+  color: #000000;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
 /* ********************************************* */
 /* toggle- switch ends here*/
 /* ********************************************* */

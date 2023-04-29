@@ -224,11 +224,16 @@ a {
 .toggle-state:checked ~ .toggle-inner .indicator {
   transform: translate3d(25%, 0, 0);
 }
-
+.changecolor {
+  color: #000000 !important;
+  opacity: 1 !important;
+}
 .toggle-switch > span {
   font-weight: 700;
   font-size: 18px;
   line-height: 25px;
+  color: #000000;
+  opacity: 0.5;
 }
 
 .toggle-switch {
@@ -245,11 +250,7 @@ a {
 .visible {
   background: #ffff;
 }
-.changecolor {
-  color: #000000;
-  mix-blend-mode: normal;
-  opacity: 0.5;
-}
+
 /* ********************************************* */
 /* toggle- switch ends here*/
 /* ********************************************* */
@@ -593,7 +594,7 @@ a {
     top: 50%;
     transform: translateY(-50%);
     left: 0;
-    height: 50%;
+    height: 32%;
   }
   /* pricing grid */
   .basic-box,
@@ -609,11 +610,11 @@ a {
     text-align: right;
   }
   .pro-box::before {
-    width: 0.5rem;
-    top: 50%;
+    width: 100%;
+    top: 0;
     transform: translateY(-50%);
     left: 0;
-    height: 100%;
+    height: 5px;
   }
 }
 

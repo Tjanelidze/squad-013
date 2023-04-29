@@ -97,6 +97,9 @@ a {
   mix-blend-mode: normal;
   opacity: 0.3;
 }
+.mobile-menu a{
+  color: #000000;
+}
 .nav-line {
   background: #000000;
   mix-blend-mode: normal;
@@ -473,7 +476,7 @@ header {
     background-size: cover;
     display: flex;
     justify-content: space-between;
-    gap: 12.3rem;
+    gap: 11rem;
     padding: 6.8rem 4rem;
   }
   /* footer section */
@@ -482,6 +485,7 @@ header {
   }
   .footerinvite {
     margin-top: 6.4rem;
+    align-self: flex-end;
   }
   .footernav-list0 > li > a {
     font-size: 12px;
@@ -504,7 +508,6 @@ header {
 .hero{
   background: url(/assets/features/desktop/hero.jpg)no-repeat;
   background-size: cover;
-  width: 100%;
 }
 /* main */
   .main-info{

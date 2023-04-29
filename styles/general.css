@@ -19,6 +19,104 @@ body {
   --min-font-weight: 400;
 }
 
+/* ******************************************************** */
+/* whole header section with its navbar  */
+/* ******************************************************** */
+header {
+  height: 7rem;
+  padding: 0 2.4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar {
+  display: none;
+}
+
+.invite-btn0 {
+  display: none;
+}
+
+#hamburger-icon {
+  margin: auto 0;
+  cursor: pointer;
+}
+
+#hamburger-icon div {
+  width: 2rem;
+  height: 1px;
+  background-color: black;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+.open .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+  transform: rotate(-45deg) translate(-4px, 6px);
+}
+
+.open .bar2 {
+  -webkit-transform: rotate(45deg) translate(-6px, -8px);
+  transform: rotate(45deg) translate(0px, -1px);
+}
+
+.open .mobile-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.mobile-menu {
+  background: #ffffff;
+  margin-top: 2rem;
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  height: calc(50vh - 50px);
+  width: 100%;
+}
+
+li {
+  list-style: none;
+  text-decoration: none;
+  margin-bottom: 2rem;
+}
+
+a {
+  font-weight: var(--max-font-weight);
+  text-decoration: none;
+  font-size: 15px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.mobile-menu > li > a:hover {
+  mix-blend-mode: normal;
+  opacity: 0.3;
+}
+.nav-line {
+  background: #000000;
+  mix-blend-mode: normal;
+  opacity: 0.25;
+  height: 1px;
+  margin-bottom: 2rem;
+  width: 85%;
+}
+
+.nav-list > li > a:hover {
+  mix-blend-mode: normal;
+  opacity: 0.3;
+}
+
+/* ************************************************************ */
+/* navbar and header section ends here  */
+/* ******************************************************** */
+
 /* ******************************************* */
 /* invitation links decoration */
 /* ******************************************* */
@@ -82,7 +180,8 @@ body {
 /* ********************************************************** */
 /* button decoration */
 /* ******************************************************** */
-.invite-btn {
+.invite-btn,
+.invite-btn0 {
   display: inline-block;
   transition: all 0.2s ease-in;
   position: relative;
@@ -166,4 +265,99 @@ body {
 
 /* ********************************************************** */
 /* button decoration */
+/* ******************************************************** */
+
+/* ******************************************************** */
+/* footer */
+/* ******************************************************** */
+footer {
+  padding: 5.6rem 6rem;
+  background-color: #000000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footernav-list0 {
+  display: none;
+}
+
+.icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1.3rem;
+  margin-top: 3.2rem;
+  margin-bottom: 5rem;
+}
+.icons > svg {
+  fill: #ffffff;
+  cursor: pointer;
+}
+
+.fb:hover {
+  fill: url(#grad);
+}
+
+.youtube:hover {
+  fill: url(#youtube);
+}
+
+.twitter:hover {
+  fill: url(#twitter);
+}
+.pinterest:hover {
+  fill: url(#pinterest);
+}
+.insta:hover {
+  fill: url(#insta);
+}
+
+.footerlastdiv {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.footernav-list > li > a {
+  margin-top: 5rem;
+  list-style: none;
+  text-decoration: none;
+  margin-bottom: 2rem;
+  font-weight: var(--max-font-weight);
+  text-decoration: none;
+  font-size: 15px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.footerinvite {
+  font-weight: var(--max-font-weight);
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 2px;
+  margin-bottom: 3.4rem;
+  color: #ffffff;
+  margin-top: 11rem;
+}
+.footerinvite::after {
+  content: url(../assets/shared/desktop/arrow\ white.svg);
+  margin-left: 1.8rem;
+}
+.copyright {
+  font-weight: var(--min-font-weight);
+  font-size: 15px;
+  line-height: 20px;
+  text-align: center;
+  color: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+  margin-top: 3.4rem;
+}
+/* ******************************************************** */
+/* footer ends here*/
 /* ******************************************************** */

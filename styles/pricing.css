@@ -459,6 +459,139 @@ a {
 }
 
 /* ******************************************************** */
+/* compare section */
+/* ******************************************************** */
+.container-small {
+  padding: 2.3rem;
+}
+
+.heading {
+  display: none;
+}
+.col2-head {
+  display: none;
+}
+.col1 > span {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 2px;
+  color: #000000;
+}
+
+.col1-head > span {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 2px;
+  color: #000000;
+}
+
+.table_head {
+  position: relative;
+  padding: 1.3rem;
+}
+.table_head::after {
+  content: "";
+  position: absolute;
+  background-color: #000000;
+  bottom: 0;
+  left: 0;
+  height: 0.5px;
+
+  width: 90%;
+}
+
+.plan-name {
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 13px;
+  letter-spacing: 1.66667px;
+  color: #000000;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+
+.table_body {
+  padding: 1.6rem;
+  position: relative;
+}
+
+.table_body::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 0.5px;
+  width: 90%;
+  background-color: #dfdfdf;
+}
+.col2 {
+  display: flex;
+  justify-content: flex-start;
+  text-align: left;
+  margin-top: 1.7rem;
+}
+.mobile-flex-column {
+  display: flex;
+  flex-direction: column;
+  margin-right: 7rem;
+}
+
+.mobile-flex-column > img {
+  display: block;
+  width: 17px;
+  margin-top: 8px;
+}
+
+/* invite with desert */
+.invite-today {
+  background: url(/assets/shared/mobile/bg-beta.jpg) no-repeat;
+  background-size: cover;
+  padding: 4.6em 6.4em 6.4em;
+  color: #ffffff;
+  position: relative;
+}
+.beta-title {
+  margin-bottom: 2.4rem;
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: 4.16667px;
+  text-transform: uppercase;
+}
+a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 1.5rem;
+  letter-spacing: 0.2rem;
+}
+.invite-link {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.getinvitation {
+  display: flex;
+}
+
+.invite-today::before {
+  content: "";
+  display: block;
+  width: 12.8rem;
+  height: 0.6rem;
+  background: linear-gradient(
+    26.57deg,
+    #ffc593 0%,
+    #bc7198 43.29%,
+    #5a77ff 83.33%
+  );
+  position: absolute;
+  top: 0;
+}
+/* ******************************************************** */
 /* min-tablet version starts from here 560px*/
 /* ******************************************************** */
 @media screen and (min-width: 560px) {
@@ -616,8 +749,110 @@ a {
     left: 0;
     height: 5px;
   }
-}
 
+  /* ******************************************************* */
+  /* compare section  */
+  /* ******************************************************* */
+  .compare {
+    max-width: 90rem;
+    margin: 0 auto;
+  }
+
+  .heading {
+    display: block;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    text-align: center;
+    letter-spacing: 4.16667px;
+    text-transform: uppercase;
+    color: #000000;
+  }
+  .table_head {
+    display: flex;
+    padding: 55px 77px 26px 50px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .col2-head {
+    display: flex;
+    gap: 5rem;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 2px;
+    align-items: left;
+    color: #000000;
+    opacity: 1;
+  }
+  .table_body {
+    display: flex;
+    padding: 23px 30px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .col1 > span {
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 2px;
+  }
+  .plan-name {
+    display: none;
+    visibility: hidden;
+  }
+
+  .invite-today {
+    display: flex;
+    background: url(/assets/shared/tablet/bg-beta.jpg) no-repeat;
+    background-size: cover;
+    padding: 4.6em 1.4em 6.4em;
+    color: #ffffff;
+    position: relative;
+    justify-content: space-between;
+  }
+  .beta-title {
+    width: 66%;
+  }
+  footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 2rem;
+    padding: 2.8rem 2rem;
+  }
+  .footernav-list {
+    display: none;
+  }
+  .footernav-list0 {
+    display: flex;
+    gap: 1rem;
+    flex-direction: row;
+    margin-top: 3.2rem;
+  }
+  .footernav-list0 > li > a {
+    list-style: none;
+    text-decoration: none;
+    margin-bottom: 2rem;
+    font-weight: var(--max-font-weight);
+    text-decoration: none;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+  .icons {
+    margin-top: 10rem;
+    justify-content: unset;
+  }
+
+  .copyright {
+    font-size: unset;
+    margin-top: 14rem;
+  }
+}
 /* ******************************************************* */
 /* DEsktop version */
 /* ******************************************************* */
@@ -635,10 +870,7 @@ a {
   .pricing-text-box {
     padding: 22.3em 15.1em;
   }
-  .getinvitation {
-    display: none;
-    visibility: hidden;
-  }
+
   .pricing-text-box > p {
     margin-top: 2.1rem;
   }
@@ -670,5 +902,47 @@ a {
     padding-top: 8.8rem;
     transform: translateY(-35px);
     position: relative;
+  }
+  .invite-today {
+    background: url(/assets/shared/desktop/bg-beta.jpg);
+    padding: 6.8rem 16.5rem 5.5rem 11.5rem;
+  }
+  .invite-link {
+    cursor: pointer;
+  }
+  /* footer */
+  footer {
+    padding: 4.6em 16.4em 6.4em;
+  }
+  .footernav-list0 {
+    display: none;
+  }
+  .footernav-list {
+    display: flex;
+    flex-direction: column;
+  }
+  .footernav-list > li > a:hover {
+    cursor: pointer;
+    mix-blend-mode: normal;
+    opacity: 0.3;
+  }
+  .copyright {
+    margin-top: 7rem;
+  }
+
+  .invite-today::before {
+    content: "";
+    display: block;
+    width: 0.5rem;
+    left: 0;
+    height: 100%;
+    background: linear-gradient(
+      26.57deg,
+      #ffc593 0%,
+      #bc7198 43.29%,
+      #5a77ff 83.33%
+    );
+    position: absolute;
+    top: 0;
   }
 }

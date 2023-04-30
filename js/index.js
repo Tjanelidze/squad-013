@@ -9,6 +9,8 @@ const indic = document.querySelector(".indicator");
 const toggle = document.querySelector(".toggle-state");
 const month = document.getElementById("month");
 const year = document.getElementById("year");
+const permonth = document.querySelectorAll(".permonth");
+const permonthpro = document.getElementById("permonthpro");
 // prices
 const priceamount = document.getElementById("price");
 const pricepro = document.getElementById("pricepro");
@@ -23,6 +25,8 @@ toggle.addEventListener("change", (event) => {
     priceamount.innerHTML = "$190.00";
     pricepro.innerHTML = "$390.00";
     pricebus.innerHTML = "$990.00";
+    permonth.innerHTML = "per year";
+    permonthpro.innerHTML = "per year";
     year.classList.add("changecolor");
     togglein.classList.add("active");
     indic.classList.add("visible");
@@ -31,6 +35,7 @@ toggle.addEventListener("change", (event) => {
     priceamount.innerHTML = "$19.00";
     pricepro.innerHTML = "$39.00";
     pricebus.innerHTML = "$99.00";
+    permonthpro.innerHTML = "Per month";
     month.classList.add("changecolor");
     console.log("Not checked");
   }

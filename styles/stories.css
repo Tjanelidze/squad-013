@@ -117,6 +117,9 @@ h2 {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
+.read-story > a {
+  color: #ffff;
+}
 
 /* ********************************************* */
 /* common styles for all cards */

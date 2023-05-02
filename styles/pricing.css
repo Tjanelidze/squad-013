@@ -660,6 +660,8 @@ a {
   }
   .invite-today {
     background: url(/assets/shared/desktop/bg-beta.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     padding: 6.8rem 16.5rem 5.5rem 11.5rem;
   }
   .invite-link {

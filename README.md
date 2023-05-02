@@ -39,7 +39,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: (https://tjanelidze.github.io/squad-013/)
+- Live Site URL: (https://clever-empanada-322abd.netlify.app/features.html)
 
 ## My process
 

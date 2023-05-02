@@ -23,7 +23,6 @@ p {
   font-size: 1.5rem;
   font-weight: 400;
   line-height: 2.5rem;
-  letter-spacing: 0.3rem;
   margin-top: 1.6rem;
 }
 .main-info > p {
@@ -218,11 +217,13 @@ a {
   .info-boxes {
     padding: 16rem 16.5rem;
     grid-template-columns: 1fr 1fr 1fr;
-    align-items: center;
+    align-items: baseline;
     row-gap: 10rem;
   }
   .invite-today {
     background: url(/assets/shared/desktop/bg-beta.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     padding: 6.8rem 164px 5.5rem 11.5rem;
   }
   .invite-link {

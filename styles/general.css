@@ -200,6 +200,7 @@ a {
   background: #000000;
   border: 1px solid #e8e8e8;
   box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+  cursor: pointer;
 }
 
 .invite-btn0 {
@@ -415,6 +416,7 @@ footer {
     background: #000000;
     border: 1px solid #e8e8e8;
     box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+    cursor: pointer;
   }
 
   .invite-btn0:active {

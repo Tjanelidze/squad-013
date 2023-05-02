@@ -130,7 +130,17 @@
   color: #000000 !important;
   opacity: 1 !important;
 }
-.toggle-switch > span {
+
+.opacitycolor {
+  opacity: 0.5 !important;
+}
+#month {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  color: #000000;
+}
+#year {
   font-weight: 700;
   font-size: 18px;
   line-height: 25px;
@@ -605,7 +615,7 @@ a {
 /* ******************************************************* */
 /* DEsktop version */
 /* ******************************************************* */
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1440px) {
   /* pricing hero */
   .pricing {
     background-image: url(../assets/pricing/desktop/hero.jpg);

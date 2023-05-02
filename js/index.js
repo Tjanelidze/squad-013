@@ -15,28 +15,33 @@ const permonthpro = document.getElementById("permonthpro");
 const priceamount = document.getElementById("price");
 const pricepro = document.getElementById("pricepro");
 const pricebus = document.getElementById("pricebus");
-
+console.log(permonth);
 toggle.addEventListener("change", (event) => {
   year.classList.remove("changecolor");
-  month.classList.remove("changecolor");
   togglein.classList.remove("active");
   indic.classList.remove("visible");
   if (toggle.checked) {
-    priceamount.innerHTML = "$190.00";
-    pricepro.innerHTML = "$390.00";
-    pricebus.innerHTML = "$990.00";
-    permonth.innerHTML = "per year";
+    priceamount.innerHTML = "&#36;190.00";
+    pricepro.innerHTML = "&#36;390.00";
+    pricebus.innerHTML = "&#36;990.00";
+
     permonthpro.innerHTML = "per year";
     year.classList.add("changecolor");
+    month.classList.add("opacitycolor");
     togglein.classList.add("active");
     indic.classList.add("visible");
-    console.log("Checked");
+    permonth.forEach((element) => {
+      element.innerHTML = "per year";
+    });
   } else {
-    priceamount.innerHTML = "$19.00";
-    pricepro.innerHTML = "$39.00";
-    pricebus.innerHTML = "$99.00";
+    priceamount.innerHTML = " &#36;19.00";
+    pricepro.innerHTML = " &#36; 39.00";
+    pricebus.innerHTML = "&#36; 99.00";
+
     permonthpro.innerHTML = "Per month";
-    month.classList.add("changecolor");
-    console.log("Not checked");
+    month.classList.remove("opacitycolor");
+    permonth.forEach((element) => {
+      element.innerHTML = "per month";
+    });
   }
 });

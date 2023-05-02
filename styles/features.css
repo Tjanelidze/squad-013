@@ -90,7 +90,6 @@ a {
 
 /* ******************************************************** */
 
-
 @media (min-width: 560px) {
   /* main-box section */
   .main-box {
@@ -100,6 +99,7 @@ a {
   .hero {
     height: 42rem;
   }
+
   /* ********************************************************** */
   /* button decoration */
   /* ******************************************************** */
@@ -121,6 +121,22 @@ a {
     padding: 4.6em 1.4em 6.4em;
     color: #ffffff;
     position: relative;
+  }
+
+  .invite-today::before {
+    content: "";
+    display: block;
+    width: 0.5rem;
+    height: 100%;
+    background: linear-gradient(
+      26.57deg,
+      #ffc593 0%,
+      #bc7198 43.29%,
+      #5a77ff 83.33%
+    );
+    position: absolute;
+
+    left: 0;
   }
   .beta-title {
     width: 66%;
@@ -160,7 +176,7 @@ a {
   }
   .invite-today::before {
     width: 0.6rem;
-    height: 28rem;
+
     left: 0;
     top: 0;
   }

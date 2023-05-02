@@ -39,7 +39,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: (https://your-live-site-url.com)
+- Live Site URL: (https://tjanelidze.github.io/squad-013/)
 
 ## My process
 

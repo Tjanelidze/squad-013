@@ -365,7 +365,7 @@
 /* ******************************************************** */
 @media screen and (min-width: 560px) {
   /* ******************************************************** */
- 
+
   /* ******************************************************** */
   /* main section  */
   /* create and share */
@@ -409,7 +409,6 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
-
 }
 
 /* ******************************************************** */
@@ -521,13 +520,12 @@
     padding: 12rem 15rem;
     max-width: 100%;
   }
-
 }
 
 /* ******************************************************* */
 /* DEsktop version */
 /* ******************************************************* */
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1440px) {
   /* create and share */
   .createandshare {
     background-image: url(../assets/home/desktop/create-and-share.jpg);

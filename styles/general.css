@@ -90,7 +90,7 @@ a {
   text-align: center;
   letter-spacing: 2.5px;
   text-transform: uppercase;
-  color: #000000;
+  color: #ffffff;
 }
 
 .mobile-menu > li > a:hover {
@@ -566,7 +566,7 @@ footer {
 /* ******************************************************* */
 /* DEsktop version */
 /* ******************************************************* */
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1440px) {
   /* header */
   header {
     padding: 1.6em 16.4em;

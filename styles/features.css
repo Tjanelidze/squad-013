@@ -117,7 +117,7 @@ a {
     display: flex;
     background: url(/assets/shared/mobile/bg-beta.jpg) no-repeat;
     background-size: cover;
-    padding: 4.6em 1.4em 6.4em;
+    padding: 2.8rem 2rem;
     color: #ffffff;
     position: relative;
   }
@@ -200,11 +200,11 @@ a {
     display: flex;
     justify-content: space-between;
 
-    padding: 6.8rem 11rem 7rem 4rem;
+    padding: 4.6em 1.4em 2.4em;
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1440px) {
   /* hero responsive section */
   .hero {
     background: url(/assets/features/desktop/hero.jpg) no-repeat;
